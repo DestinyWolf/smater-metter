@@ -1,7 +1,7 @@
 from pymongo import MongoClient
 from pandas import DataFrame
 
-CONNECTION_STRING = "mongodb://localhost:27017/"
+CONNECTION_STRING = " mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+2.2.0"
 
 #retorna a colecaco de dados do medidor
 def getDbData():
